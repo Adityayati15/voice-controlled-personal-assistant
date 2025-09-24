@@ -13,7 +13,7 @@ engine = pyttsx3.init()
 newsapi = "YOUR_NEWSAPI_KEY"
 
 def speak(text):
-    tts = gTTS(text)
+    tts =gTTS(text)
     tts.save('temp.mp3')
     pygame.mixer.init()
     pygame.mixer.music.load('temp.mp3')
